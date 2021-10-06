@@ -4,11 +4,6 @@
     font-family: Brush;
     src: url(font/Lunar\ Blossom\ Brush.otf);
 }
-/* 本文フォント */
-@font-face {
-    font-family: Tsukiji;
-    src: url(font/GL-Tsukiji-4go.otf);
-}
 
 body {
     margin: 0;
@@ -107,7 +102,6 @@ header h2 {
 .contact-wrapper {
     width: 100%;
     height: auto;
-    font-family: Tsukiji;
 }
 
 .contact {
@@ -145,7 +139,6 @@ header h2 {
     float: left;
     height: auto;
     width: 25%;
-    color: darkgoldenrod;
 }
 
 .contact img {
