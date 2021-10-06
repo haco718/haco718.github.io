@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header-left">
+				</div>
+				<div class="header-right">
+					<div class="header-icons" href="#3">
+						<div id="contact-icon"><i class="fas fa-id-card fa-4x"></i></div>
+					</div>
+					<div class="header-icons" href="#2">
+						<div id="eskills-icon"><i class="fas fa-code fa-4x"></i></div>
+					</div>
+					<div class="header-icons" href="#1">
+						<div class="home"><i class="fas fa-home fa-4x"></i></div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</header>
+		<div class="home-wrapper" id="1">
+			<div class="container">
+				<h2>Portofolio</h2>
+			</div>
+		</div>
+
+		<div class="engskills-wrapper" id="2">
+			<div class="container">
+				<div class="eng-skills" id="eskills-body">
+					<canvas id="myBarChart"></canvas>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+					<!-- グラフ描画 -->
+<script>
+  var ctx = document.getElementById("myBarChart");
+  var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Java', '.NET', 'Spring framework', 'SQL Server', 'Github', 'Vue.js', 'AWS'],
+      datasets: [
+        {
+          label: 'Skills',
+          data: [70, 66, 80, 88, 76, 34, 44],
+          backgroundColor: "rgba(219,39,91,0.5)"
+        }
+      ]
+    },
+    options: {
+        responsive: true,
+      title: {
+        display: true,
+        text: 'levels'
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            suggestedMax: 100,
+            suggestedMin: 0,
+            stepSize: 10,
+            callback: function(value, index, values){
+              return  value
+            }
+          }
+        }]
+      },
+    }
+  });
+  </script>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-wrapper" id="3">
+			<div class="container">
+				<div class="contact" id="pskills-body">
+					<p>contact</p>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/yuko.aikawa.946" target="_new" rel="noopener">
+								<img class="front" src="css/icons/facebook.svg">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/yuko-aikawa-a630411a2" target="_new" rel="noopener">
+								<img class="front" src="css/icons/linkedin.svg">
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/haco718" target="_new" rel="noopener">
+								<img src="css/icons/github.svg">
+							</a>
+						</li>
+						<li>
+							<a href="mailto:serpy69@gmail.com" target="_new" rel="noopener">
+								<img src="css/icons/mail.svg">
+							</a>
+						</li>
+					</ul>
+					</div>
+			</div>
+		</div>
+		<footer>
+			<p>©️Yuko</p>
+		</footer>
+	</body>
+</html>

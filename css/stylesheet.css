@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* 見出しフォント */
+@font-face {
+    font-family: Brush;
+    src: url(font/Lunar\ Blossom\ Brush.otf);
+}
+/* 本文フォント */
+@font-face {
+    font-family: Tsukiji;
+    src: url(font/GL-Tsukiji-4go.otf);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color:#193441;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    color: #7BA23F;
+}
+
+header{
+    height: 110px;
+    width: 100%;
+    margin: 0;
+    color: #7BA23F;
+    background-color: rgb(25, 52, 65, 0.9);
+    position: fixed;
+    z-index: 10;
+}
+
+header h2 {
+    font-family: Brush;
+    font-size: 60px;
+    padding: 0;
+    margin: 10px 10px;
+}
+
+.header-left {
+    height: 80px;
+    width: auto;
+    float: left;
+}
+
+.header-right {
+    height: 80px;
+}
+
+.header-icons {
+    padding: 15px 10px;
+    float: right;
+    width: 10%;
+    transition: all 0.3s;
+}
+
+/* マウスオーバー時にアイコン透過 */
+.header-icons:hover {
+  opacity: 0.6;
+}
+
+.container h2 {
+    font-family: Brush;
+    font-size: 80px;
+    margin: 0;
+    text-align: center;
+    padding: 30% 40%;
+}
+
+.home-wrapper {
+    background-image: url(/img/Portfolio_bench.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+    width: 100%;
+    min-width: 300px;
+    height: 80%;
+    overflow: hidden;
+}
+
+.engskills-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 140px 0;
+}
+
+.eng-skills {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width:  calc(100% - 60px);
+    height: calc(100% - 20px);
+    overflow: hidden;
+    padding: 30px 45px;
+    background-color: rgb(45,72,80);
+}
+
+.graph {
+    height: 400px;
+}
+
+.contact-wrapper {
+    width: 100%;
+    height: auto;
+    font-family: Tsukiji;
+}
+
+.contact {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 550px;
+    margin: 140px 0 0 0;
+    padding: 15px 30px;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(45,72,80);
+}
+
+.contact p{
+    font-family: Brush;
+    font-size: 60px;
+    margin: 0;
+    padding: 60px 0;
+}
+
+.contact ul{
+    list-style: none;
+    height: 300px;
+    margin: 10px 0;
+    padding: 0 30px;
+}
+
+.contact li {
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    float: left;
+    height: auto;
+    width: 25%;
+    color: darkgoldenrod;
+}
+
+.contact img {
+    width: 130px;
+    padding: 20px 30px;
+}
+
+li a {
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+}
+
+footer {
+    height: 80px;
+}
+
+footer p {
+    font-family: Brush;
+    font-size: 40px;
+    float: right;
+    color:darkcyan;
+    padding: 0 5%;
+    margin: 10px 10px;
+}
