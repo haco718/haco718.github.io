@@ -139,6 +139,11 @@ header h2 {
     float: left;
     height: auto;
     width: 25%;
+    transition: 0.2s
+}
+
+.contact li:hover {
+    transform: scale(1.2);
 }
 
 .contact img {
